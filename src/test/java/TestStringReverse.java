@@ -35,4 +35,9 @@ public class TestStringReverse {
         Assert.assertNull(stringReverse(null));
     }
 
+    @Test
+    public void test7() {
+        Assert.assertEquals(new StringBuilder("%TGBNH^^&JM").reverse().toString(), stringReverse("%TGBNH^^&JM"));
+    }
+
 }
