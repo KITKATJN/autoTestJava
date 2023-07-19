@@ -5,7 +5,7 @@ public class StringReverse {
     /**
      *
      * @param stringToReverse string for reverse
-     * @return reversed string
+     * @return reversed string hh
      */
     public static String stringReverse(String stringToReverse) {
         // insert your code here
