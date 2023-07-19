@@ -6,7 +6,7 @@ public class StringReverse {
 
     /**
      * @param stringToReverse string for reverse
-     * @return reversed string
+     * @return reversed string yy
      */
     public static String stringReverse(String stringToReverse) {
         if (stringToReverse == null) {
