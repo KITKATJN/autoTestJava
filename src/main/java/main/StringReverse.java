@@ -1,15 +1,26 @@
 package main;
 
-public class StringReverse {
+import java.util.Arrays;
 
-    /**
-     *
-     * @param stringToReverse string for reverse
-     * @return reversed string
-     */
+public class StringReverse {
     public static String stringReverse(String stringToReverse) {
-        // insert your code here
-        // you need to convert string to array of chars and work with it
-        return stringToReverse;
+        if (stringToReverse == null) {
+            return null;
+        }
+
+        char[] charArray = stringToReverse.toCharArray();
+        return reverseArray(charArray);
     }
+
+    public static  String reverseArray(char[] charArray) {
+
+            char[] arr = new char[charArray.length];
+            for (int i = 0; i < charArray.length; i++) {
+                arr[i] = charArray[charArray.length - 1 - i];
+            }
+        return new String(arr);
+    }
+
+
 }
+
