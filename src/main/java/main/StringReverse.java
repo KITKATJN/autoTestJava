@@ -1,45 +1,26 @@
 package main;
 
-public class StringReverse {
+import java.util.Arrays;
 
-    /**
-     * @param stringToReverse string for reverse
-     * @return reversed string
-     */
+public class StringReverse {
     public static String stringReverse(String stringToReverse) {
         if (stringToReverse == null) {
             return null;
         }
 
         char[] charArray = stringToReverse.toCharArray();
-        reverseArray(charArray);
-        printArray(charArray);
-        return new String(charArray);
+        return reverseArray(charArray);
     }
 
+    public static  String reverseArray(char[] charArray) {
 
-    public static void reverseArray(char[] charArray) {
-        {
-            for (int i = charArray.length - 1; i >= 0; i--) {
-                for (int j = 0; j < i; j++) {
-                    char a = charArray[j];
-                    charArray[j] = charArray[j + 1];
-                    charArray[j + 1] = a;
-                }
+            char[] arr = new char[charArray.length];
+            for (int i = 0; i < charArray.length; i++) {
+                arr[i] = charArray[charArray.length - 1 - i];
             }
-        }
+        return new String(arr);
     }
 
-    public static void printArray(char[] charArray) {
-        for (char ii : charArray) {
-            System.out.print(ii);
-        }
-        System.out.println();
-    }
-
-    // insert your code here
-    // you need to convert string to array of chars and work with it
-    // example("hello" -> "olleh")
 
 }
 
